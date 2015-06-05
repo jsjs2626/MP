@@ -22,6 +22,9 @@ class HealthViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var animal : UITextField!
     @IBOutlet var other : UITextField!
     @IBOutlet var blood : UITextField!
+    @IBOutlet var cancel : UIButton!
+    
+    var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +46,38 @@ class HealthViewController: UIViewController, UITextFieldDelegate {
         plant.delegate = self;
         other.delegate = self;
         blood.delegate = self;
-
+        
+        if let foodIsNotNill = defaults.objectForKey("food") as? String {
+            self.food.text = defaults.objectForKey("food") as! String
+        }
+        
+        if let medicineIsNotNill = defaults.objectForKey("med") as? String {
+            self.medicine.text = defaults.objectForKey("med") as! String
+        }
+        
+        if let plantIsNotNill = defaults.objectForKey("plant") as? String {
+            self.plant.text = defaults.objectForKey("plant") as! String
+        }
+        
+        if let animalIsNotNill = defaults.objectForKey("animal") as? String {
+            self.animal.text = defaults.objectForKey("animal") as! String
+        }
+        
+        if let otherIsNotNill = defaults.objectForKey("other") as? String {
+            self.other.text = defaults.objectForKey("other") as! String
+        }
+        
+        if let bloodIsNotNill = defaults.objectForKey("bg") as? String {
+            self.blood.text = defaults.objectForKey("bg") as! String
+        }
+        
+        diabetes!.on = defaults.boolForKey("diabetes")
+        cancer!.on = defaults.boolForKey("cancer")
+        heart!.on = defaults.boolForKey("heart")
+        kidney!.on = defaults.boolForKey("kidney")
+        nerve!.on = defaults.boolForKey("nerve")
+        vision!.on = defaults.boolForKey("vision")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,9 +90,29 @@ class HealthViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    @IBAction func save(sender: AnyObject) {
+        
+        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setObject(self.food.text, forKey: "food")
+        defaults.setObject(self.medicine.text, forKey: "med")
+        defaults.setObject(self.plant.text, forKey: "plant")
+        defaults.setObject(self.animal.text, forKey: "animal")
+        defaults.setObject(self.other.text, forKey: "other")
+        defaults.setObject(self.blood.text, forKey: "bg")
+        
+        defaults.setBool(diabetes!.on, forKey: "diabetes");
+        defaults.setBool(cancer!.on, forKey: "cancer");
+        defaults.setBool(heart!.on, forKey: "heart");
+        defaults.setBool(kidney!.on, forKey: "kidney");
+        defaults.setBool(nerve!.on, forKey: "nerve");
+        defaults.setBool(vision!.on, forKey: "vision");
+        
     }
 
 

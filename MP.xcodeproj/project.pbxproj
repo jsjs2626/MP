@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C5F95081B1607B20078505B /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5F95071B1607B20078505B /* cancel.png */; };
+		0C7F4C0B1B18B9BF00D5732A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F4C0A1B18B9BF00D5732A /* User.swift */; };
 		0CB00BF31B0A489100EF1927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB00BF21B0A489100EF1927 /* AppDelegate.swift */; };
 		0CB00BF51B0A489100EF1927 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB00BF41B0A489100EF1927 /* PersonalViewController.swift */; };
 		0CB00BF71B0A489100EF1927 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB00BF61B0A489100EF1927 /* HealthViewController.swift */; };
@@ -20,6 +22,9 @@
 		0CB00C211B0A642C00EF1927 /* paper-clip-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB00C201B0A642C00EF1927 /* paper-clip-7.png */; };
 		0CB00C231B0A64FB00EF1927 /* man-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB00C221B0A64FB00EF1927 /* man-7.png */; };
 		0CB00C291B0A658000EF1927 /* business-bag-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB00C281B0A658000EF1927 /* business-bag-7.png */; };
+		0CCFF5451B17621C009ECB47 /* ReadHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCFF5441B17621C009ECB47 /* ReadHealthViewController.swift */; };
+		0CCFF5481B176CCB009ECB47 /* ReadPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCFF5471B176CCB009ECB47 /* ReadPersonalViewController.swift */; };
+		0CCFF54A1B176CF9009ECB47 /* ReadClinicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCFF5491B176CF9009ECB47 /* ReadClinicalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C5F95071B1607B20078505B /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancel.png; path = ../../../Downloads/cancel.png; sourceTree = "<group>"; };
+		0C7F4C0A1B18B9BF00D5732A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CB00BED1B0A489100EF1927 /* MP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB00BF11B0A489100EF1927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB00BF21B0A489100EF1927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +57,11 @@
 		0CB00C201B0A642C00EF1927 /* paper-clip-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paper-clip-7.png"; path = "../../../Downloads/iconbeast-lite-200/iconbeast lite 200 - png/paper-clip-7.png"; sourceTree = "<group>"; };
 		0CB00C221B0A64FB00EF1927 /* man-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "man-7.png"; path = "../../../Downloads/iconbeast-lite-200/iconbeast lite 200 - png/man-7.png"; sourceTree = "<group>"; };
 		0CB00C281B0A658000EF1927 /* business-bag-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "business-bag-7.png"; path = "../../business-bag-7.png"; sourceTree = "<group>"; };
+		0CCFF5411B16170D009ECB47 /* bridger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridger.h; sourceTree = "<group>"; };
+		0CCFF5441B17621C009ECB47 /* ReadHealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadHealthViewController.swift; sourceTree = "<group>"; };
+		0CCFF5461B1764FA009ECB47 /* HealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		0CCFF5471B176CCB009ECB47 /* ReadPersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadPersonalViewController.swift; sourceTree = "<group>"; };
+		0CCFF5491B176CF9009ECB47 /* ReadClinicalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadClinicalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +105,13 @@
 			children = (
 				0CB00BF21B0A489100EF1927 /* AppDelegate.swift */,
 				0CB00BF41B0A489100EF1927 /* PersonalViewController.swift */,
+				0CCFF5471B176CCB009ECB47 /* ReadPersonalViewController.swift */,
 				0CB00BF61B0A489100EF1927 /* HealthViewController.swift */,
+				0CCFF5441B17621C009ECB47 /* ReadHealthViewController.swift */,
 				0CB00C181B0A614800EF1927 /* ClinicalViewController.swift */,
+				0CCFF5491B176CF9009ECB47 /* ReadClinicalViewController.swift */,
 				0CB00BF81B0A489100EF1927 /* Main.storyboard */,
+				0C7F4C0A1B18B9BF00D5732A /* User.swift */,
 				0CB00BFB1B0A489100EF1927 /* Images.xcassets */,
 				0CB00BFD1B0A489100EF1927 /* LaunchScreen.xib */,
 				0CB00BF01B0A489100EF1927 /* Supporting Files */,
@@ -106,6 +122,9 @@
 		0CB00BF01B0A489100EF1927 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CCFF5411B16170D009ECB47 /* bridger.h */,
+				0CCFF5461B1764FA009ECB47 /* HealthViewController.h */,
+				0C5F95071B1607B20078505B /* cancel.png */,
 				0CB00C1E1B0A641700EF1927 /* link-7.png */,
 				0CB00C1C1B0A63D800EF1927 /* circle-user-7.png */,
 				0CB00C281B0A658000EF1927 /* business-bag-7.png */,
@@ -219,6 +238,7 @@
 				0CB00C231B0A64FB00EF1927 /* man-7.png in Resources */,
 				0CB00BFF1B0A489100EF1927 /* LaunchScreen.xib in Resources */,
 				0CB00C291B0A658000EF1927 /* business-bag-7.png in Resources */,
+				0C5F95081B1607B20078505B /* cancel.png in Resources */,
 				0CB00BFC1B0A489100EF1927 /* Images.xcassets in Resources */,
 				0CB00C1F1B0A641700EF1927 /* link-7.png in Resources */,
 			);
@@ -240,6 +260,10 @@
 			files = (
 				0CB00BF71B0A489100EF1927 /* HealthViewController.swift in Sources */,
 				0CB00C191B0A614800EF1927 /* ClinicalViewController.swift in Sources */,
+				0CCFF5451B17621C009ECB47 /* ReadHealthViewController.swift in Sources */,
+				0CCFF54A1B176CF9009ECB47 /* ReadClinicalViewController.swift in Sources */,
+				0C7F4C0B1B18B9BF00D5732A /* User.swift in Sources */,
+				0CCFF5481B176CCB009ECB47 /* ReadPersonalViewController.swift in Sources */,
 				0CB00BF31B0A489100EF1927 /* AppDelegate.swift in Sources */,
 				0CB00BF51B0A489100EF1927 /* PersonalViewController.swift in Sources */,
 			);
@@ -321,6 +345,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,6 +382,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -369,6 +395,7 @@
 				INFOPLIST_FILE = MP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -379,6 +406,7 @@
 				INFOPLIST_FILE = MP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -435,6 +463,7 @@
 				0CB00C101B0A489100EF1927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB00C111B0A489100EF1927 /* Build configuration list for PBXNativeTarget "MPTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +472,7 @@
 				0CB00C131B0A489100EF1927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
